@@ -1,8 +1,6 @@
 import { galleryItems } from "./gallery-items.js";
-// import * as basicLightbox from "basiclightbox";
 // Change code below this line
 
-// console.log(galleryItems);
 
 const gallery = document.querySelector(".gallery");
 
@@ -21,10 +19,7 @@ const makeGalleryItemMarkup = ({ original, preview, description }) => {
   `;
 };
 
-// console.log(makeGalleryItemMarkup(galleryItems));
-
 const makeGalleryMarkup = galleryItems.map(makeGalleryItemMarkup).join("");
-// console.log(makeGalleryMarkup);
 gallery.insertAdjacentHTML("beforeend", makeGalleryMarkup);
 
 gallery.addEventListener("click", (e) => {
